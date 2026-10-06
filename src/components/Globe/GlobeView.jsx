@@ -62,7 +62,7 @@ export default function GlobeView() {
       if (sat.id === 'SAT-001') {
         alt = 0.15;
       }
-      
+
       // Current position of the satellite
       const pos = calculatePosition(sat.inc, sat.raan, sat.theta);
       let satPosition;
@@ -134,11 +134,11 @@ export default function GlobeView() {
 
       {/* Engines */}
       {dataMode === 'tca' ? (
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 10, background: '#08151d', paddingTop: '60px' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 10, background: '#08151d', paddingTop: '100px' }}>
           <TCASimulation />
         </div>
       ) : dataMode === 'hypothetical_tca' ? (
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 10, background: '#08151d', paddingTop: '60px' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 10, background: '#08151d', paddingTop: '100px' }}>
           <HypotheticalTCASimulation />
         </div>
       ) : (
@@ -157,33 +157,33 @@ export default function GlobeView() {
       {/* Floating Bottom Dashboard */}
       {dataMode !== 'tca' && dataMode !== 'hypothetical_tca' && (
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[100] flex gap-2 p-1.5 rounded-xl bg-slate-950/40 backdrop-blur-3xl saturate-150 border border-t-white/20 border-x-white/10 border-b-white/5 shadow-[inset_0_1px_0_rgba(255,255,255,0.1),_0_8px_32px_rgba(0,0,0,0.4)]">
-            <button
-                className={`w-[130px] h-9 text-xs font-mono tracking-wider transition-all duration-300 rounded-lg flex items-center justify-center whitespace-nowrap font-medium ${dataMode === 'normal' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]' : 'bg-transparent text-slate-400 hover:text-slate-200 hover:bg-white/5 border border-transparent'}`}
-                onClick={() => {
-                    setDataMode('normal');
-                    if (onModeChange) onModeChange();
-                }}
-            >
-                NORMAL VIEW
-            </button>
-            <button
-                className={`w-[130px] h-9 text-xs font-mono tracking-wider transition-all duration-300 rounded-lg flex items-center justify-center whitespace-nowrap font-medium ${dataMode === 'realistic' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]' : 'bg-transparent text-slate-400 hover:text-slate-200 hover:bg-white/5 border border-transparent'}`}
-                onClick={() => {
-                    setDataMode('realistic');
-                    if (onModeChange) onModeChange();
-                }}
-            >
-                REALISTIC VIEW
-            </button>
-            <button
-                className={`w-[130px] h-9 text-xs font-mono tracking-wider transition-all duration-300 rounded-lg flex items-center justify-center whitespace-nowrap font-medium ${dataMode === 'tca' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]' : 'bg-transparent text-slate-400 hover:text-slate-200 hover:bg-white/5 border border-transparent'}`}
-                onClick={() => {
-                    setDataMode('tca');
-                    if (onModeChange) onModeChange();
-                }}
-            >
-                TCA VIEW
-            </button>
+          <button
+            className={`w-[130px] h-9 text-xs font-mono tracking-wider transition-all duration-300 rounded-lg flex items-center justify-center whitespace-nowrap font-medium ${dataMode === 'normal' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]' : 'bg-transparent text-slate-400 hover:text-slate-200 hover:bg-white/5 border border-transparent'}`}
+            onClick={() => {
+              setDataMode('normal');
+              if (onModeChange) onModeChange();
+            }}
+          >
+            NORMAL VIEW
+          </button>
+          <button
+            className={`w-[130px] h-9 text-xs font-mono tracking-wider transition-all duration-300 rounded-lg flex items-center justify-center whitespace-nowrap font-medium ${dataMode === 'realistic' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]' : 'bg-transparent text-slate-400 hover:text-slate-200 hover:bg-white/5 border border-transparent'}`}
+            onClick={() => {
+              setDataMode('realistic');
+              if (onModeChange) onModeChange();
+            }}
+          >
+            REALISTIC VIEW
+          </button>
+          <button
+            className={`w-[130px] h-9 text-xs font-mono tracking-wider transition-all duration-300 rounded-lg flex items-center justify-center whitespace-nowrap font-medium ${dataMode === 'tca' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 shadow-[0_0_15px_rgba(6,182,212,0.2)]' : 'bg-transparent text-slate-400 hover:text-slate-200 hover:bg-white/5 border border-transparent'}`}
+            onClick={() => {
+              setDataMode('tca');
+              if (onModeChange) onModeChange();
+            }}
+          >
+            TCA VIEW
+          </button>
         </div>
       )}
 
