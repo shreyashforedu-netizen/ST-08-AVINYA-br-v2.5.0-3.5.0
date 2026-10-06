@@ -1,0 +1,29 @@
+[
+  { "id": "SAT-001", "name": "VANGUARD 1", "intlDes": "1958-002B", "alt": 0.2, "org": "NRL", "isConst": false, "type": "Scientific", "value": "$10M", "inc": 34.2, "raan": 45, "theta": 10, "collision": { "targetObjectName": "SPACE DEBRIS X", "tca": "2026-10-06 14:30:00", "probability": "0.015%" } },
+  { "id": "SAT-002", "name": "HUBBLE", "intlDes": "1990-037B", "alt": 0.15, "org": "NASA", "isConst": false, "type": "Observation", "value": "$4.7B", "inc": 28.5, "raan": 120, "theta": 45 },
+  { "id": "SAT-003", "name": "ISS (ZARYA)", "intlDes": "1998-067A", "alt": 0.1, "org": "MULTI", "isConst": false, "type": "Station", "value": "$150B", "inc": 51.6, "raan": 200, "theta": 90 },
+  { "id": "SAT-004", "name": "GOES-16", "intlDes": "2016-071A", "alt": 0.6, "org": "NOAA", "isConst": false, "type": "Weather", "value": "$1B", "inc": 0, "raan": 0, "theta": -75 },
+  { "id": "SAT-005", "name": "NAVSTAR 62", "intlDes": "2010-022A", "alt": 0.4, "org": "USSF", "isConst": true, "type": "Navigation", "value": "$500M", "inc": 55, "raan": 15, "theta": 210 },
+  { "id": "SAT-006", "name": "LANDSAT 8", "intlDes": "2013-008A", "alt": 0.12, "org": "NASA", "isConst": false, "type": "Observation", "value": "$855M", "inc": 98.2, "raan": 40, "theta": 180 },
+  { "id": "SAT-007", "name": "SUOMI NPP", "intlDes": "2011-061A", "alt": 0.13, "org": "NOAA", "isConst": false, "type": "Weather", "value": "$1.5B", "inc": 98.7, "raan": 60, "theta": 250 },
+  { "id": "SAT-008", "name": "AEHF-4", "intlDes": "2018-079A", "alt": 0.55, "org": "USSF", "isConst": false, "type": "Military", "value": "$1.8B", "inc": 4.8, "raan": 90, "theta": 30 },
+  { "id": "SAT-009", "name": "GSAT-29", "intlDes": "2018-089A", "alt": 0.55, "org": "ISRO", "isConst": false, "type": "Comms", "value": "$80M", "inc": 0.1, "raan": 55, "theta": 60 },
+  { "id": "SAT-010", "name": "TIANGONG", "intlDes": "2021-035A", "alt": 0.08, "org": "CNSA", "isConst": false, "type": "Station", "value": "$10B", "inc": 41.5, "raan": 145, "theta": 310 },
+  { "id": "SAT-011", "name": "TERRA", "intlDes": "1999-068A", "alt": 0.11, "org": "NASA", "isConst": false, "type": "Observation", "value": "$1.3B", "inc": 98.2, "raan": 110, "theta": 50 },
+  { "id": "SAT-012", "name": "AQUA", "intlDes": "2002-022A", "alt": 0.11, "org": "NASA", "isConst": false, "type": "Observation", "value": "$950M", "inc": 98.2, "raan": 190, "theta": 110 },
+  { "id": "SAT-013", "name": "GALILEO 22", "intlDes": "2018-060A", "alt": 0.45, "org": "ESA", "isConst": true, "type": "Navigation", "value": "$40M", "inc": 56, "raan": 75, "theta": 15 },
+  { "id": "SAT-014", "name": "METOP-C", "intlDes": "2018-087A", "alt": 0.13, "org": "EUMETSAT", "isConst": false, "type": "Weather", "value": "$350M", "inc": 98.7, "raan": 220, "theta": 270 },
+  { "id": "SAT-015", "name": "ALOS-2", "intlDes": "2014-029A", "alt": 0.1, "org": "JAXA", "isConst": false, "type": "Observation", "value": "$150M", "inc": 97.9, "raan": 310, "theta": 80 },
+
+  { "id": "ORION-1", "name": "ORION-A1", "intlDes": "2026-001A", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 270, "theta": 0 },
+  { "id": "ORION-2", "name": "ORION-A2", "intlDes": "2026-001B", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 270, "theta": 15 },
+  { "id": "ORION-3", "name": "ORION-A3", "intlDes": "2026-001C", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 270, "theta": 30 },
+  { "id": "ORION-4", "name": "ORION-A4", "intlDes": "2026-001D", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 270, "theta": 45 },
+  { "id": "ORION-5", "name": "ORION-A5", "intlDes": "2026-001E", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 270, "theta": 60 },
+
+  { "id": "ORION-6", "name": "ORION-B1", "intlDes": "2026-002A", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 90, "theta": 180 },
+  { "id": "ORION-7", "name": "ORION-B2", "intlDes": "2026-002B", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 90, "theta": 195 },
+  { "id": "ORION-8", "name": "ORION-B3", "intlDes": "2026-002C", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 90, "theta": 210 },
+  { "id": "ORION-9", "name": "ORION-B4", "intlDes": "2026-002D", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 90, "theta": 225 },
+  { "id": "ORION-10", "name": "ORION-B5", "intlDes": "2026-002E", "alt": 0.25, "org": "GLOBAL", "isConst": true, "type": "Comms", "value": "$15M", "inc": 60, "raan": 90, "theta": 240 }
+]
